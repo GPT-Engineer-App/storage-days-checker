@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Heading, VStack, HStack, Image, Text, Input, IconButton, Flex, Spacer } from '@chakra-ui/react';
-import { SearchIcon, ShoppingCartIcon } from '@chakra-ui/icons';
+import { SearchIcon } from '@chakra-ui/icons';
+import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Homepage = () => {
@@ -13,7 +14,7 @@ const Homepage = () => {
           <Input placeholder="Search for products" size="md" />
           <IconButton icon={<SearchIcon />} />
           <Link to="/cart">
-            <IconButton icon={<ShoppingCartIcon />} />
+            <IconButton icon={<FaShoppingCart />} />
           </Link>
         </HStack>
       </Flex>
